@@ -1,0 +1,14 @@
+wsi\repo\EngineInterface.class
+wsi\model\GenericResponse.class
+wsi\model\HttpMessageConverter.class
+wsi\GaugeConfig.class
+wsi\model\Temperatura.class
+wsi\repo\EngineViaHttp$1.class
+wsi\Controllers\MyGsonHttpMessageConverter.class
+wsi\repo\EngineMock.class
+wsi\Controllers\EngineMockController.class
+wsi\model\EngineStatus.class
+wsi\DemoApplication.class
+wsi\repo\EngineViaHttp.class
+wsi\model\panel.class
+wsi\Controllers\AppController.class

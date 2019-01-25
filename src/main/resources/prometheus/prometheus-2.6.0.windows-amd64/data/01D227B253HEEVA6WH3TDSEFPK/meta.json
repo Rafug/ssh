@@ -1,0 +1,13 @@
+{
+	"ulid": "01D227B253HEEVA6WH3TDSEFPK",
+	"minTime": 1548396000000,
+	"maxTime": 1548403200000,
+	"stats": {},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01D227B253HEEVA6WH3TDSEFPK"
+		]
+	},
+	"version": 1
+}

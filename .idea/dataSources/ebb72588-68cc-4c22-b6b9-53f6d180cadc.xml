@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-11-28.15:43:33.241</IntrospectionTimestamp>
-      <IntrospectionStateNumber>888</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-01-07.21:13:40.929</IntrospectionTimestamp>
+      <IntrospectionStateNumber>895</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -29,16 +29,48 @@
     <schema id="8" parent="2" name="information_schema">
       <ObjectId>12648</ObjectId>
     </schema>
-    <sequence id="9" parent="3" name="users_id_seq">
+    <sequence id="9" parent="3" name="logs_id_seq">
+      <ObjectId>24766</ObjectId>
+      <StateNumber>892</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="10" parent="3" name="users_id_seq">
       <ObjectId>24755</ObjectId>
       <StateNumber>885</StateNumber>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
-    <table id="10" parent="3" name="users">
+    <table id="11" parent="3" name="logs">
+      <ObjectId>24763</ObjectId>
+      <StateNumber>895</StateNumber>
+    </table>
+    <table id="12" parent="3" name="users">
       <ObjectId>24752</ObjectId>
       <StateNumber>887</StateNumber>
     </table>
-    <column id="11" parent="10" name="id">
+    <column id="13" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>892</StateNumber>
+      <SequenceName>logs_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;logs_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="14" parent="11" name="start">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>893</StateNumber>
+    </column>
+    <column id="15" parent="11" name="stop">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>894</StateNumber>
+    </column>
+    <column id="16" parent="11" name="norvrs">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>895</StateNumber>
+    </column>
+    <column id="17" parent="12" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -46,24 +78,24 @@
       <SequenceName>users_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <column id="12" parent="10" name="login">
+    <column id="18" parent="12" name="login">
       <Position>2</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>886</StateNumber>
     </column>
-    <column id="13" parent="10" name="password">
+    <column id="19" parent="12" name="password">
       <Position>3</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>887</StateNumber>
     </column>
-    <index id="14" parent="10" name="users_pk">
+    <index id="20" parent="12" name="users_pk">
       <ObjectId>24761</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="15" parent="10" name="users_pk">
+    <key id="21" parent="12" name="users_pk">
       <ObjectId>24762</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pk</UnderlyingIndexName>

@@ -2,9 +2,18 @@
 .boxed {
     border-radius: 3px;
     border: 1px solid #2a6496;
-    padding: 5px;
-    margin-bottom: 5px;
+    width:100%;
+}
 
+
+.card{
+    width:100%;
+}
+
+.container-fluid {
+    width:100%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .debug {
@@ -12,7 +21,7 @@
 }
 
 .half {
-    width: 80%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid gray;
 }
@@ -25,19 +34,19 @@
 
 .clean_input {
     border: none;
-    width: 90%;
+    width: 100%;
     border-bottom: 1px solid lightslategray;
     margin-bottom: 1px;
 }
 
 
 .narrow8 {
-    width: 80%;
+    width: 100%;
 }
 
 .narrow-free2 {
-    width: 20%;
-    max-width: 100px;
+  /*  width: 20%;
+    max-width: 100px; */
 }
 
 
@@ -128,14 +137,12 @@
 .col-sm-6{
     text-align: center;
     vertical-align: middle;
-   width: 100%;
+    width: 100%;
 
     
 }
 .entry-header{
     display: block;
-    margin-left: 20px;
-    margin-right: 20px;
     text-align: center;
     vertical-align: middle;
 }
@@ -146,7 +153,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 .row {
     text-align: center;
@@ -164,7 +171,8 @@
     vertical-align: middle; 
 }
 .col-sm-12{
-    padding-top: 0.5px;
+    width:100%;
+   /* padding-top: 0.1px; */
 }
 
 #ip2 {
@@ -216,3 +224,19 @@
 .ww{
     padding-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

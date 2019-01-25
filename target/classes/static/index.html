@@ -1,9 +1,9 @@
 <!doctype html>
-<html  ng-app="myApp" ng-controller="masterCtrl" xmlns:ng-model="http://www.w3.org/1999/xhtml">
+<html  xmlns:ng-model="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>System do wyznaczania częstotliwości granicznej</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -12,46 +12,123 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
             integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
             crossorigin="anonymous"></script>
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
     <script src="angular-md5.js"></script>
     <script src="js/mainApp.js"></script>
     <script src="js/controllers/masterCtrl.js"></script>
 
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 
 <body background="http://www.naukaipostep.pl/wp-content/uploads/2012/01/1370477_67072439.jpg">
-<div ng-app="myApp" ng-controller="myCtrl">
+<div > <!--  -->
 
-<div b ng-show="!$storage.zalogowany">
+<div>
+    <form name="login">
 
-    <div class="jx">
+
+
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+                    <form class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-32">
+						Logowanie do systemu
+					</span>
+
+                        <span class="txt1 p-b-11">
+						Login
+					</span>
+                        <div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+                            <input class="input100" type="text" name="username" >
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <span class="txt1 p-b-11">
+						Hasło
+					</span>
+                        <div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+						<span class="btn-show-pass" >
+							<i class="fa fa-eye" ></i>
+						</span>
+                            <input class="input100" type="password" name="pass" >
+                            <span class="focus-input100"></span>
+                        </div>
+
+
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn" onclick="check(this.form)" >
+                                Loguj
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="dropDownSelect1"></div>
+
+
+
+
+
+
+
+
+
+
+   <!--  <div class="jx">
         <label> Login </label>
-        <input type="tekst"  ng-model="login">
+        <input type="text"  ng-model="username" placeholder="Wprowadź login" name="userid">
     </div>
     <div class="jw">
         <label>Haslo</label>
-        <input type="password" ng-model="haslo">
+        <input type="password" ng-model="password" placeholder="Wprowadź hasło" name="pswrd" >
 
     </div>
 
     <div class="jg">
-        <span   class="btn btn-success" ng-click="loguj()"> Logowanie </span>
-    </div>
-
+        <input type="button" onclick="check(this.form)" value="Login"/>
+    </div> -->
+    </form>
 </div>
 
 
+    <script language="javascript">
+        function check(form)
+        {
 
+            if(form.username.value == "admin" && form.pass.value == "wsiz")
+            {
+                window.open("http://localhost:8445/test.html")
+            }
+            else
+            {
+                alert("Proszę wprowadzić poprawny login i hasło")
+            }
+        }
+    </script>
 
 <!-- <script>
             var app = angular.module('myApp2', ['angular-md5', 'ngSanitize','ngStorage']);
@@ -192,5 +269,20 @@
             });
     </script> -->
 </div>
+
+
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<script src="js/main.js"></script>
+
+
+
 </body>
 </html>

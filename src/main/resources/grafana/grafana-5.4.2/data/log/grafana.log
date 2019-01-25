@@ -1,0 +1,39 @@
+t=2019-01-24T20:58:48+0100 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2019-01-24T21:24:44+0100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/d/gq9FYLQmz/enginetemptable status=302 remote_addr=[::1] time_ms=74 size=29 referer=http://localhost:8445/test.html
+t=2019-01-24T21:24:44+0100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=75 size=59 referer=http://localhost:8445/test.html
+t=2019-01-25T11:01:40+0100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T13:49:23+0100
+t=2019-01-25T11:01:40+0100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Rafaello\\Desktop\\grafana\\grafana-5.4.2/conf/defaults.ini
+t=2019-01-25T11:01:40+0100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Rafaello\\Desktop\\grafana\\grafana-5.4.2
+t=2019-01-25T11:01:40+0100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Rafaello\\Desktop\\grafana\\grafana-5.4.2\\data
+t=2019-01-25T11:01:40+0100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Rafaello\\Desktop\\grafana\\grafana-5.4.2\\data\\log
+t=2019-01-25T11:01:40+0100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Rafaello\\Desktop\\grafana\\grafana-5.4.2\\data\\plugins
+t=2019-01-25T11:01:40+0100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Rafaello\\Desktop\\grafana\\grafana-5.4.2\\conf\\provisioning
+t=2019-01-25T11:01:40+0100 lvl=info msg="App mode production" logger=settings
+t=2019-01-25T11:01:40+0100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2019-01-25T11:01:40+0100 lvl=info msg="Initializing SqlStore" logger=server
+t=2019-01-25T11:01:40+0100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2019-01-25T11:01:40+0100 lvl=info msg="Starting DB migration" logger=migrator
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing SearchService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing RenderingService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing AlertingService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing HooksService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing NotificationService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Initializing PluginManager" logger=server
+t=2019-01-25T11:01:41+0100 lvl=info msg="Starting plugin search" logger=plugins
+t=2019-01-25T11:01:42+0100 lvl=info msg="Initializing TracingService" logger=server
+t=2019-01-25T11:01:42+0100 lvl=info msg="Initializing Stream Manager"
+t=2019-01-25T11:01:42+0100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+t=2019-01-25T11:08:17+0100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=192.168.0.73 time_ms=28 size=29 referer=
+t=2019-01-25T11:10:17+0100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/api/v1/query_range status=400 remote_addr=192.168.0.73 time_ms=100 size=111 referer="http://192.168.0.115:3000/dashboard/new?orgId=1"
+t=2019-01-25T11:12:56+0100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/api/v1/query_range status=502 remote_addr=192.168.0.73 time_ms=29 size=0 referer="http://192.168.0.115:3000/d/1KaPf18iz/temperatura?refresh=5s&orgId=1"
+t=2019-01-25T11:12:56+0100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/api/v1/query_range status=502 remote_addr=192.168.0.73 time_ms=44 size=0 referer="http://192.168.0.115:3000/d/1KaPf18iz/temperatura?refresh=5s&orgId=1"
+t=2019-01-25T11:14:50+0100 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2019-01-25T11:14:50+0100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/api/v1/query_range status=502 remote_addr=192.168.0.73 time_ms=465 size=0 referer="http://192.168.0.115:3000/d/1KaPf18iz/temperatura?refresh=5s&orgId=1"
+t=2019-01-25T11:14:50+0100 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=0
+t=2019-01-25T11:14:50+0100 lvl=info msg="Database table locked, sleeping then retrying" logger=sqlstore retry=1
+t=2019-01-25T11:14:51+0100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/1/api/v1/query_range status=502 remote_addr=192.168.0.73 time_ms=757 size=0 referer="http://192.168.0.115:3000/d/1KaPf18iz/temperatura?refresh=5s&orgId=1"
+t=2019-01-25T11:41:48+0100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/d/1KaPf18iz/temperatura status=302 remote_addr=[::1] time_ms=36 size=29 referer=http://localhost:8445/test.html
